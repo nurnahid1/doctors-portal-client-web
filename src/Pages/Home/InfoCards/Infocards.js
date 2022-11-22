@@ -5,7 +5,7 @@ import phone from '../../../assets/icons/phone.svg'
 
 const Infocards = () => {
     return (
-        <div className='grid gap-x-10 gap-y-5 md:gap-10 md:grid-cols-2 grid-cols-1 lg:grid-cols-3 mx-10'>
+        <div className='grid gap-x-10 gap-y-5 md:gap-10 md:grid-cols-2 grid-cols-1 lg:grid-cols-3 mx-10 mt-12'>
         <div className="card  lg:card-side bg-gradient-to-r text-white from-primary to-secondary shadow-xl">
         
         <figure className='pl-5 pt-5'>
