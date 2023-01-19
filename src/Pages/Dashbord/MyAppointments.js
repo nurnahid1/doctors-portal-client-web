@@ -3,7 +3,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { auth } from '../../firebase.init';
 
 const MyAppointments = () => {
@@ -46,16 +46,27 @@ const MyAppointments = () => {
         <th>Date</th>
         <th>Time</th>
         <th>Treatment</th>
+        <th>Payment</th>
       </tr>
     </thead>
     <tbody>
       {
-        appointments.map((a, index)=> <tr>
+        appointments.map((a, index)=> <tr key={a._id}>
             <th> {index + 1} </th>
             <td>{a.patientName}</td>
             <td> {a.date} </td>
             <td> {a.slot} </td>
             <td> {a.treatment} </td>
+            <td> 
+              {(a.price && !a.paid) && <Link to={`/dashbord/payment/${a._id}`}><button className='btn btn-xs btn-success'>Pay</button></Link>}
+               {(a.price && a.paid) && 
+               
+               <div>
+                <span className='text-success'>Paid</span>
+                <span className='text-success'>Transaction Id {a.transactionId}</span>
+               </div>
+               }
+            </td>
           </tr>)
       }
       
