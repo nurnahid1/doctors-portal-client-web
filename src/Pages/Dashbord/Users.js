@@ -17,20 +17,13 @@ const Users = () => {
           },
         }).then((res) => res.json())
       );
-
-    // const {data: users, isLoading} = useQuery('users', ()=> fetch('https://doctors-portal-server-ten-murex.vercel.app/users', {
-    //     method: 'GET',
-    //     headers:{
-    //         'authorization': `Bearer ${localStorage.getItem('accessToken')}`
-    //       }
-    // }).then(res => res.json()));
     if(isLoading){
         return <Loading></Loading>
     }
 
     return (
         <div>
-            <h4 className='text-2xl text-green-500'>All users: {users.length}</h4>
+            <h4 className='text-2xl text-indigo-500 pb-3'>All users: 0{users.length}</h4>
             <div className="overflow-x-auto">
   <table className="table w-full">
     
@@ -38,8 +31,8 @@ const Users = () => {
       <tr>
         <th></th>
         <th>Name</th>
-        <th>Job</th>
-        <th>Favorite Color</th>
+        <th>Make Admin</th>
+        <th>Delete</th>
       </tr>
     </thead>
     <tbody>

@@ -33,20 +33,20 @@ const MyAppointments = () => {
         }
     }, [user])
     return (
-        <div>
-            <h4>my appointments {appointments.length}</h4>
+        <div className='px-5 md:px-10'>
+          
 
-            <div className="overflow-x-auto">
+        <div className="overflow-x-auto ">
   <table className="table w-full">
    
     <thead>
       <tr>
         <th></th>
-        <th>Name</th>
-        <th>Date</th>
-        <th>Time</th>
-        <th>Treatment</th>
-        <th>Payment</th>
+        <th className='font-bold'>Name</th>
+        <th className='font-bold'>Date</th>
+        <th className='font-bold'>Time</th>
+        <th className='font-bold'>Treatment</th>
+        <th className='font-bold'>Payment</th>
       </tr>
     </thead>
     <tbody>

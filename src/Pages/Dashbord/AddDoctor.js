@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import { useQuery } from 'react-query';
 import { toast } from 'react-toastify';
 import Loading from '../Shared/Loading/Loading';
+import { FaHandHoldingMedical } from "react-icons/fa";
 
 const AddDoctor = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
@@ -62,12 +63,15 @@ const AddDoctor = () => {
      }
  
     return (
-        <div>
-            <h2 className='text-2xl ms-2'>Add a Doctor</h2>
-            <form onSubmit={handleSubmit(onSubmit)}>
+        <div className='px-5 md:px-20'>
+           <div className='flex items-center'>
+           <p className='text-xl font-bold text-slate-800 mr-1'> Add a new Doctor </p>
+           <FaHandHoldingMedical></FaHandHoldingMedical>
+           </div>
+            <form className='' onSubmit={handleSubmit(onSubmit)}>
 
                 {/* Name */}
-                <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full max-w-xs ">
                 <label className="label">
                     <span className="label-text">Name</span>
                 </label>
@@ -143,7 +147,7 @@ const AddDoctor = () => {
                 </label>
                 </div>
 
-                <input className='btn  w-full max-w-xs mt-4 text-white' type="submit" value="Add" />
+                <input className='btn btn-success  w-full max-w-xs mt-4 text-white' type="submit" value="Add Doctor" />
                 </form>
         </div>
     );
