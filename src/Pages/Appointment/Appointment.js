@@ -7,7 +7,7 @@ import AvailableAppoinment from './AvailableAppoinment';
 const Appointment = () => {
     const [date, setDate] = useState(new Date());
     return (
-        <div>
+        <div className='scroll'>
            
             <AppointmentBanner
             date={date}

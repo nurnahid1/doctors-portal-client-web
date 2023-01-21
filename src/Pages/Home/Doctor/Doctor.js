@@ -11,7 +11,7 @@ const Doctor = () => {
                 <div data-aos="fade-right" className='bg-gradient-to-r from-primary to-secondary h-[330px] md:h-[400px] md:w-[500px] w-[300px] absolute bottom-4 md:bottom-7 left-50 rounded-md -z-10 '>
 
                 </div>
-                <div data-aos="fade-left" className='bg-blue-400 h-24 w-36 md:w-60 absolute bottom-10 left-44 md:left-[340px] rounded-md'>
+                <div data-aos="fade-left" className='bg-blue-400 h-24 w-36 md:w-60 absolute bottom-10 left-44 md:left-[340px] rounded-md hidden md:block'>
                     <h2 className='pl-2 font-bold text-xs md:text-xl text-black md:pt-1 pt-3'> Greetings & Welcome</h2>
                     <h2 className='text-white font-bold text-md md:text-xl pl-2 '>Dr. Henry Jorge</h2>
                 </div>

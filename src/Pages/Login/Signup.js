@@ -40,7 +40,7 @@ const Signup = () => {
     };
 
     return (
-        <div data-aos="fade-up" className='h-screen flex justify-center items-center px-8 md:px-0'>
+        <div data-aos="fade-up" className='h-screen flex justify-center items-center px-8 md:px-0 scroll'>
             <div className="card w-96  bg-base-100 shadow-xl">
             <div className="card-body ">
                 <h2 className=" text-center text-xl font-bold">Sign Up</h2>

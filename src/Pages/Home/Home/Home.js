@@ -8,10 +8,11 @@ import Infocards from '../InfoCards/Infocards';
 import MakeAppointment from '../MakeAppointment/MakeAppointment';
 import Services from '../Services/Services';
 import Testimonials from '../Testimonials/Testimonials';
+import './Home.css'
 
 const Home = () => {
     return (
-        <div className='px-12'>
+        <div className='px-12 scroll'>
           <Banner></Banner>
           <Infocards></Infocards>
           <Doctor></Doctor>
