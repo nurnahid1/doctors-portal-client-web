@@ -3,7 +3,7 @@ import React from 'react';
 const Review = ({review}) => {
     return (
 <div class="card lg:max-w-lg bg-base-100 shadow-xl">
-  <div class="card-body">
+  <div  class="card-body">
    
     <p>It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribu to using Content here, content</p>
     <div className='flex justify-baseline  items-center'>
@@ -14,7 +14,7 @@ const Review = ({review}) => {
     </div>
     <div className='ml-5'>
         <h2 className='text-black font-bold'>{review.name}</h2>
-        <p>california</p>
+        <p>{review.city}</p>
     </div>
     </div>
   </div>
